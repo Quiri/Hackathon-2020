@@ -8,7 +8,11 @@ tolower(substr(gsub("[AEIOU]", "A", toupper("Willkommen im Kurs")), 1,4))
 
 gsub("[AEIOU]", "A", toupper(welcome))
 
-welcome %>% toupper() %>% gsub("[AEIOU]", "A", .) %>% substr(1, 4) %>% tolower()
+welcome %>% 
+  toupper() %>% 
+  gsub("[AEIOU]", "A", .) %>% 
+  substr(1, 4) %>% 
+  tolower()
 
 iris %>%
   filter(Species =="setosa")%>%
